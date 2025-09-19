@@ -1,5 +1,6 @@
 
-    
+    ![Screenshot 2025-09-19 161830](https://github.com/user-attachments/assets/9b7fa534-d5f7-4cf0-8fd0-ddce0b76dd08)
+
 ![Screenshot 2025-09-19 161830](https://github.com/user-attachments/assets/bc117092-e5c0-43eb-bc04-8381ded20774)
 
 Addon-ul verifica partenerii si afiseaza rezultatul in pagina "Create supplier invoice" din SAP Fiori 
