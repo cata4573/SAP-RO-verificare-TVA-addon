@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "SAP Fiori Tax Number Verification",
+  "version": "1.0",
+  "description": "Adds a tax verification and display in SAP Fiori Create Supplier Invoice.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },  
+  "web_accessible_resources": [
+    {
+	  "resources": ["page.js"],
+	  "matches": ["mySite:myPort/*"]
+    }
+  ],
+  "host_permissions": [
+    "https://mySite:myPort/*",
+	"https://webservicesp.anaf.ro/*",
+	"https://webservice.anaf.ro/*",
+	"https://ec.europa.eu/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["mySite:myPort/*"],
+      "all_frames": true,
+      "js": ["injector.js","content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
+
+
